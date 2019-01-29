@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Latitude vs.</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="true">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <a class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">        
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lat_vs_temp.html">vs. Temperature</a></li>
+                            <li><a href="lat_vs_hum.html">vs. Humidity</a></li>
+                            <li><a href="lat_vs_cloud.html">vs. Cloudiness</a></li>
+                            <li><a href="lat_vs_wind.html">vs. Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 block">
+            <h1 class="header">Summary: Latitude vs. X</h1>
+            <hr>
+            <img class="col-xs-6 col-sm-6 col-md-6 col-lg-6 img-responsive" src="Instructions/Resources/assets/images/Fig1.png" alt="lat_vs_temp">
+            <p class="txt">
+                The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled date form the OpenWeatherMap Api to assemble a dataset on over 500 cities.
+                <br>
+                <br>
+                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. 
+                Factors we looked at included: temperature, cloudiness, wind speed, humidity.This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any treadns and correlations witnessed.
+            </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 block">
+            <h2 class="header">Visualizations</h1>
+            <hr>
+            <div class="row">
+                <a href="lat_vs_temp.html">
+                    <img class="col-xs-3 col-sm-3 col-md-3 col-lg-6 viz-img" src="Instructions/Resources/assets/images/Fig1.png" alt="lat_vs_temp">
+                </a> 
+                <a href="lat_vs_hum.html">   
+                    <img class="col-xs-3 col-sm-3 col-md-3 col-lg-6 viz-img" src="Instructions/Resources/assets/images/Fig2.png" alt="lat_vs_hum">
+                </a>
+
+                <a href="lat_vs_cloud.html">
+                    <img class="col-xs-3 col-sm-3 col-md-3 col-lg-6 viz-img" src="Instructions/Resources/assets/images/Fig3.png" alt="lat_vs_cloud">
+                </a>
+                <a href="lat_vs_wind.html">
+                    <img class="col-xs-3 col-sm-3 col-md-3 col-lg-6 viz-img" src="Instructions/Resources/assets/images/Fig4.png" alt="lat_vs-wind">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer> </footer>
+    <footer class="page-footer font-small">
+        <div class="footer-copyright text-center">
+            © Coding Bootcamp 2017
+        </div>
+    </footer>
+
+</body>
+</html>
